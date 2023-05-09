@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Style/logo-title.ico.png">
+    <link rel="stylesheet" href="Style/index.css">
+    <link rel="stylesheet" href="Style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Desencriptador Alura</title>
+</head>
+<body>
+    <main>
+        <header class="header-logo">
+            <div class="div-logo">
+                <h1 class="logo-alura">a</h1>
+            </div>
+        </header>
+        <section>
+            <div class="div-main">
+                <textarea class="text-a-encrip" placeholder="Ingrese tu texto a encriptar"></textarea>
+                <div class="div-adv">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi-bi-exclamation-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                    </svg><h5 class="advertencia">Solo letras minusculas y sin acentos</h5>
+                </div>
+                <div class="button-div">
+                <button class="encriptar">Encriptar</button><button class="desencriptar">Desencriptar</button>
+                </div>
+            </div>
+            <div class="div-encrip" >
+                <div class="diseño-encrip">
+                    <img class="img"src="Style/Muñeco.png">
+                    <span class="span-main">Ningun mensaje fue encontrado</span>
+                    <span class="span-second">Ingresa el texto que desees encriptar o desencriptar</span>
+                </div>
+                <div id="div-encriptado"class="hidden">
+                    <span class="span-trans"></span>
+                </div>
+                <div>
+                    <button id="boton-copiar" class="hidden">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="Src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+body{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    background-color: #E5E5E5;
+}
+
+main{
+    display: flex !important;
+}
+
+section{
+    display: flex;
+    width: 95%;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.header-logo{
+    margin: 20px 20px;
+}
+
+.div-logo{
+    width: 4rem;
+    height: 4rem;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+.logo-alura{
+    color: #0A3871;
+    text-align: center;
+    font-size: 3.5rem;
+    margin: auto;
+}
+
+.div-main{
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px 20px;
+    width: 65%;
+}
+
+.div-encrip{
+    margin: 20px 20px;
+    width: 35%;
+    background-color: rgb(255, 166, 0);
+    text-align: center;
+    border-radius: 25px;
+}
+
+.text-a-encrip{
+    padding-top: 2rem;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 75%;
+    font-size: 1.3rem;
+    resize: none;
+}
+
+.text-a-encrip:focus{
+    outline: none !important;
+}
+
+.div-adv{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+}
+
+.bi-bi-exclamation-circle{
+    color: rgb(70, 70, 70); 
+    margin-top: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.advertencia{
+    color: rgb(70, 70, 70);
+    margin-top: 0.5rem;
+    margin-left: 0.2rem;
+    margin-bottom: 2rem;
+
+}
+
+.button-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encriptar{
+    box-sizing: border-box;
+    width: 35%;
+    height: 3.5rem;
+    margin: 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: #0a3871;
+    color: white;
+    font-size: 1rem;
+}
+
+.encriptar:hover{
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: rgb(10, 50, 99);
+}
+
+.desencriptar{
+    box-sizing: border-box;
+    width: 35%;
+    height: 3.5rem;
+    margin: 1rem;
+    border-radius: 15px;
+    border-style: none;
+    background-color: rgb(255, 166, 0);
+    color: #0A3871;
+}
+
+.desencriptar:hover{
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: rgb(226, 148, 2);
+}
+/* La propriedad ** overflow-y: auto; ** es necesaria en el texto encriptado ya que el usuario podria ingresar mucho texto*/
+
+
+
+.div-encrip{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#boton-copiar{
+    box-sizing: border-box;
+    width: 6rem;
+    height: 3.5rem;
+    margin: 0rem;
+    border-radius: 1.5rem;
+    border-style: none;
+    background-color: #0a3871;
+    color: white;
+    font-size: 1rem;
+}
+
+#boton-copiar:hover{
+    cursor: pointer;
+    font-size: 1.1rem;
+    background-color: rgb(10, 50, 99);
+}
+
+.span-encrip{
+    color: white;
+}
+
+.diseño-encrip{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 90%;
+    height: 100%;
+    font-size: 1.3rem;  
+    text-align: center;
+    justify-content: center;
+}
+
+img, span{
+    box-sizing: border-box;
+    padding: 1.5rem;
+    color: white;
+}
+
+img{
+    object-fit: scale-down;
+    margin-bottom: 2rem;
+}
+    
+.span-main{
+    font-size: 1.2rem;
+}
+
+.span-second{
+    position: relative;
+    top: -2rem;
+    font-size: 0.8rem;
+}
+
+#div-encriptado{
+    position: relative;
+    padding-top: 2rem;
+    top: -5%;
+    width: 90%;
+    height: 80%;
+    font-size: 1.3rem;  
+    text-align: justify;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and  (max-width: 900px){
+
+    body{
+        overflow-x:hidden;
+    }
+     
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-logo{
+        box-sizing: border-box;
+        width: 100vw;
+        height: 10%;
+        margin: 0;
+        padding-right: 0;
+        padding-left: 15px;
+        padding-top: 15px;
+    }
+
+    section{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .div-main{
+        margin: 0;
+        margin-bottom: 5rem;
+        width: 100%;
+        height: 50%;
+    }
+
+    .div-encrip{
+        margin: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    .diseño-encrip img{
+        display: none;
+    }
+}
