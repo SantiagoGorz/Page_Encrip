@@ -1,6 +1,6 @@
 body{
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    background-color: #E5E5E5;
+    background-color: rgb(233, 236, 248);
 }
 
 main{
@@ -21,7 +21,6 @@ section{
 .div-logo{
     width: 4rem;
     height: 4rem;
-    background-color: orange;
     border-radius: 10px;
 }
 
@@ -42,7 +41,7 @@ section{
 .div-encrip{
     margin: 20px 20px;
     width: 35%;
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(255, 255, 255);
     text-align: center;
     border-radius: 25px;
 }
@@ -112,14 +111,14 @@ section{
     margin: 1rem;
     border-radius: 15px;
     border-style: none;
-    background-color: rgb(255, 166, 0);
-    color: #0A3871;
+    background-color: rgb(170, 178, 213);
+    color: #0a3871;
 }
 
 .desencriptar:hover{
     cursor: pointer;
     font-size: 1.1rem;
-    background-color: rgb(226, 148, 2);
+    background-color: rgb(138, 152, 212);
 }
 /* La propriedad ** overflow-y: auto; ** es necesaria en el texto encriptado ya que el usuario podria ingresar mucho texto*/
 
@@ -152,7 +151,7 @@ section{
 }
 
 .span-encrip{
-    color: white;
+    color: black;
 }
 
 .diseño-encrip{
@@ -169,7 +168,7 @@ section{
 img, span{
     box-sizing: border-box;
     padding: 1.5rem;
-    color: white;
+    color: black;
 }
 
 img{
@@ -243,5 +242,27 @@ img{
 
     .diseño-encrip img{
         display: none;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .div-main{
+        margin-bottom: 9rem;
+    }
+    
+    .button-div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    .advertencia{
+        margin-bottom: 2rem;
+    }
+
+    .encriptar, .desencriptar{
+        margin-top: 10px;
+        margin: 5px;
+        width: 90%;
     }
 }
